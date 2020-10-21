@@ -1,0 +1,142 @@
+<!-- //https://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=439d4b804bc8187953eb36d2a8c26a02https://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=YOUR_API_KEY -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="./style.css"/>
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-darl bg-dark">
+        <h1 class ="navbar-text">Weather Dashboard</h1>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4" style="width: 30%;">
+                <div class="card">
+                    <div class="card-body" id="location-section">
+                        <h5>Search For a City </h5>
+                        <div class="input-group md-form form-sm">
+                            <input class="form-control" type="text" placeholder="Search" id="search-field">
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-primary" id="search-Icon"><i class="fas fa-search text-white"></i></button>
+                            </div>
+                        </div><br>
+                        <div id="list">
+                            <ul class="list-group">
+                                <!-- <li class="list-group-item"></li> -->
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-8" style="width: 70%;">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body" id="Weather">
+                                <h2 class="header"></h2>
+                                <p class="news1"></p>
+                                <p class="news2"></p>
+                                <p class="news3"></p>
+                                <p class="news4"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h2>5-Day Forecast:</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="card" >
+                            <div class="card-body" id="forecast1">
+                                <h5 class ="day1"></h5>
+                                <p class="forecast1-temp"></p>
+                                <p class="forecast1-humi"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body" id="forecast2">
+                                <h5 class="day2"></h5>
+                                <p class="forecast2-temp"></p>
+                                <p class="forecast2-humi"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body" id="forecast3">
+                                <h5 class="day3"></h5>
+                                <p class="forecast3-temp"></p>
+                                <p class="forecast3-humi"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body" id="forecast4">
+                                <h5 class="day4"></h5>
+                                <p class="forecast4-temp"></p>
+                                <p class="forecast4-humi"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body" id="forecast5">
+                                <h5 class="day5"></h5>
+                                <p class="forecast5-temp"></p>
+                                <p class="forecast5-humi"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- location column -->
+            </div>
+
+
+            <!-- row div -->
+        </div>
+      
+    </div>
+    
+    
+    
+    <!-- Footer -->
+    <div>
+        <footer class="container-fluid">
+            <div id="footer" class="fixed-bottom">
+                <div class="footer-copyright text-center py-3">© 2020 original Website :
+                    <a id="footer-link" href="https://www.linkedin.com/in/raihan-akter91/" target="_blank">Raihan Akter</a>
+                </div>
+            </div>
+        </footer>
+    </div> 
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>

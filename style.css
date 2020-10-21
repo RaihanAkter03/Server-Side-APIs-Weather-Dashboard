@@ -1,0 +1,15 @@
+.navbar-text{
+    color: white;
+    margin: 0px auto;
+    display: block;
+    
+}
+
+.card-body{
+    background-color:rgb(233, 231, 231);
+}
+#forecast1,#forecast2,#forecast3,#forecast4,#forecast5{
+    background-color:#3333ff;
+    color: white;
+}
+
