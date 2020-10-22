@@ -1,15 +1,52 @@
 .navbar-text{
     color: white;
     margin: 0px auto;
-    display: block;
-    
+    display: block;  
 }
 
 .card-body{
-    background-color:rgb(233, 231, 231);
+    background-color:rgb(247, 243, 243);
 }
 #forecast1,#forecast2,#forecast3,#forecast4,#forecast5{
     background-color:#3333ff;
     color: white;
 }
 
+body{
+    background-image: url(./Assets/image2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+
+}
+
+#footer-link{
+    color:blue;
+}
+
+.container-fluid{
+    margin-top: 5%;
+}
+.col-4{
+    padding-left: 5%;
+    padding-right: 2%;
+}
+.col-8{
+   padding-left: 2%;
+   padding-right: 5%; 
+}
+.low{
+    background-color: green;
+}
+.moderate{
+    background-color: yellow;
+}
+.high{
+    background-color: orange;
+}
+.veryHigh{
+    background-color: red;
+}
+.extreme{
+    background-color: violet;
+}
