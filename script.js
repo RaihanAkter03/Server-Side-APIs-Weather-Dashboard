@@ -67,17 +67,17 @@ $(document).ready(function () {
                 localStorage.setItem("lon", JSON.stringify(response.city.coord.lon));
                 localStorage.setItem("lat", JSON.stringify(response.city.coord.lat));
                          
-                var img = $("<img>").attr("src", "http://openweathermap.org/img/w/" + response.list[0].weather[0].icon + ".png");
+                var img = $("<img>").attr("src", "https://openweathermap.org/img/w/" + response.list[0].weather[0].icon + ".png");
                 
-                var img1 = $(".image1").attr("src", "http://openweathermap.org/img/w/" + response.list[0].weather[0].icon + ".png");
+                var img1 = $(".image1").attr("src", "https://openweathermap.org/img/w/" + response.list[0].weather[0].icon + ".png");
                 
-                var img2 = $(".image2").attr("src", "http://openweathermap.org/img/w/" + response.list[2].weather[0].icon + ".png");
+                var img2 = $(".image2").attr("src", "https://openweathermap.org/img/w/" + response.list[2].weather[0].icon + ".png");
                 
-                var img3 = $(".image3").attr("src", "http://openweathermap.org/img/w/" + response.list[3].weather[0].icon + ".png");
+                var img3 = $(".image3").attr("src", "https://openweathermap.org/img/w/" + response.list[3].weather[0].icon + ".png");
                 
-                var img4 = $(".image4").attr("src", "http://openweathermap.org/img/w/" + response.list[4].weather[0].icon + ".png");
+                var img4 = $(".image4").attr("src", "https://openweathermap.org/img/w/" + response.list[4].weather[0].icon + ".png");
                 
-                var img5 = $(".image5").attr("src", "http://openweathermap.org/img/w/" + response.list[4].weather[0].icon + ".png");
+                var img5 = $(".image5").attr("src", "https://openweathermap.org/img/w/" + response.list[4].weather[0].icon + ".png");
 
                 var T1 = response.list[0].main.temp;
                 var H1 = response.list[0].main.humidity;
