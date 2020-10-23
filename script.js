@@ -112,23 +112,28 @@ $(document).ready(function () {
             success: function (response) {
                 UV = response.value;
                 var pE4 = $(".news4");
+                var span = $("<span class='UV-index'>");               
+
                                 
-                if (UV < 2 && UV === 0) {
-                    pE4.addClass("low");  
+                if (UV <= 2 && UV > 0) {
+                    span.addClass("low");  
                 }
-                if (UV > 2 && UV === 5) { 
-                    pE4.addClass("moderate");
+                if (UV > 2 && UV <= 5) { 
+                    span.addClass("moderate");
                 }
-                if (UV > 5 && UV < 7) { 
-                    pE4.addClass("high");
+                if (UV > 5 && UV <= 7) { 
+                    span.addClass("high");
                 }
-                if (UV > 8 && UV < 10) {
-                    pE4.addClass("veryHigh");
+                if (UV > 8 && UV <= 10) {
+                    span.addClass("veryHigh");
                 }
                 if (UV > 10 ) {
-                    pE4.addClass("extreme");
+                    span.addClass("extreme");
                 }
-                pE4.text("UV Index: " + UV);
+
+                pE4.text("UV Index: ");
+                span.text(UV);
+                pE4.append(span);
                 $("#Weather").append(pE4);
             }
         });

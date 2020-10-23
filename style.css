@@ -49,3 +49,7 @@ body{
 .extreme{
     background-color: violet;
 }
+.UV-index{
+    padding: 2%;
+    border-radius: 5px;
+}
